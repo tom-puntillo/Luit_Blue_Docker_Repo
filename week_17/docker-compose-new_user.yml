@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  new_user-jenkins-container:
+    image: jenkins/jenkins
+    ports:
+      - 8080:8080
+    volumes:
+      - week-17-vol:/var/jenkins_home
+volumes:
+  week-17-vol:

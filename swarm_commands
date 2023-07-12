@@ -1,0 +1,5 @@
+# docker service create --name psql --network mydrupal -e POSTGRES_PASSWORD=mypass postgres:14
+
+# docker service create --name drupal --network mydrupal -p 80:80 drupal:9
+
+# docker service create --name search --replicas 3 -p 9200:9200 elasticsearch:2
